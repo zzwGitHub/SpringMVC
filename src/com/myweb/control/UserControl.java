@@ -25,6 +25,7 @@ public class UserControl {
 	
 	@RequestMapping("/add")
 	public String add(User user){
+		System.out.println("å¢åŠ ");
 		userDao.save(user);
 		return "redirect:list.do";
 	}
@@ -43,7 +44,7 @@ public class UserControl {
 	/**
 	 * 
 	 * @return
-	 * 2017Äê4ÔÂ29ÈÕ
+	 * 2017ï¿½ï¿½4ï¿½ï¿½29ï¿½ï¿½
 	 */
 	@RequestMapping("/list")
 	public ModelAndView list(){
